@@ -1,0 +1,42 @@
+﻿<Page x:Class="integrated_production_management.Pages.AddEditMaterial"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:integrated_production_management.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Добавить/Редактировать материал">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200"/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="200"/>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Width="350">
+            <TextBlock Text="Код материала:"/>
+            <TextBox Name="txtCode" Margin="0,0,0,10"/>
+
+            <TextBlock Text="Наименование:"/>
+            <TextBox Name="txtName" Margin="0,0,0,10"/>
+
+            <TextBlock Text="Тип материала:"/>
+            <ComboBox Name="cbTypeMaterial" DisplayMemberPath="title" SelectedValuePath="id_type_material" Margin="0,0,0,10"/>
+
+            <TextBlock Text="Единица измерения:"/>
+            <ComboBox Name="cbUnit" DisplayMemberPath="title" SelectedValuePath="id_unit" Margin="0,0,0,10"/>
+
+            <TextBlock Text="Минимальный остаток:"/>
+            <TextBox Name="txtMinRemain" Margin="0,0,0,10"/>
+
+            <TextBlock Text="Текущая рыночная цена:"/>
+            <TextBox Name="txtCurrentPrice" Margin="0,0,0,10"/>
+
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <Button x:Name="btnSave" Content="Сохранить" Click="btnSave_Click" Width="100" Margin="0,0,5,0"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Page>

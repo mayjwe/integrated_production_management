@@ -1,0 +1,65 @@
+﻿<Page x:Class="integrated_production_management.Pages.AssignResourcesPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      Title="Назначение ресурсов">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200"/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="200"/>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Width="400">
+            <TextBlock Text="Выберите сотрудника:" Margin="0,0,0,5"/>
+            <ComboBox Name="cbEmployee" Margin="0,0,0,10"
+                      SelectionChanged="cbEmployee_SelectionChanged">
+                <ComboBox.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel>
+                            <TextBlock>
+                                <Run Text="{Binding Path=last_name}"/>
+                                <Run Text=" "/>
+                                <Run Text="{Binding Path=first_name}"/>
+                                <Run Text=" "/>
+                                <Run Text="{Binding Path=middle_name}"/>
+                            </TextBlock>
+                            <TextBlock Text="{Binding Path=Position.title}" Foreground="Gray" FontSize="10"/>
+                        </StackPanel>
+                    </DataTemplate>
+                </ComboBox.ItemTemplate>
+            </ComboBox>
+
+            <TextBlock Text="Квалификация:" Name="txtQualification" Margin="0,0,0,10"/>
+
+            <TextBlock Text="Выберите оборудование:" Margin="0,0,0,5"/>
+            <ComboBox Name="cbEquipment" Margin="0,0,0,10"
+                      SelectionChanged="cbEquipment_SelectionChanged">
+                <ComboBox.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel>
+                            <TextBlock Text="{Binding Path=model}"/>
+                            <TextBlock Text="{Binding Path=TypeEquipment.title}" Foreground="Gray" FontSize="10"/>
+                        </StackPanel>
+                    </DataTemplate>
+                </ComboBox.ItemTemplate>
+            </ComboBox>
+
+            <TextBlock Text="Характеристики:" Name="txtSpecs" Margin="0,0,0,5"/>
+            <TextBlock Text="График ТО:" Name="txtMaintenance" Margin="0,0,0,10"/>
+
+            <TextBlock Text="Часы работы:" Margin="0,0,0,5"/>
+            <TextBox Name="txtHours" Margin="0,0,0,10"/>
+
+            <TextBlock Text="Дата начала использования:" Margin="0,0,0,5"/>
+            <DatePicker Name="dpStartDate" Margin="0,0,0,10"/>
+
+            <TextBlock Text="Дата окончания использования:" Margin="0,0,0,5"/>
+            <DatePicker Name="dpEndDate" Margin="0,0,0,10"/>
+
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <Button Name="btnSave" Content="Сохранить" Click="btnSave_Click" Width="100"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Page>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="842d23a0d8574d0f9d01dcd7587603f9" Name="Diagram1">
+        <EntityTypeShape EntityType="Integrated_productionModel.BillOfMaterials" Width="1.5" PointX="8.25" PointY="10.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Integrated_productionModel.Category" Width="1.5" PointX="3.75" PointY="17.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Integrated_productionModel.Department" Width="1.5" PointX="10.5" PointY="6.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Integrated_productionModel.Employee" Width="1.5" PointX="12.75" PointY="2.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Integrated_productionModel.Equipment" Width="1.5" PointX="12.75" PointY="23" IsExpanded="true" />
+        <EntityTypeShape EntityType="Integrated_productionModel.EquipmentUsageLog" Width="1.5" PointX="15" PointY="14.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Integrated_productionModel.Material" Width="1.5" PointX="3" PointY="10" IsExpanded="true" />
+        <EntityTypeShape EntityType="Integrated_productionModel.OrderProduct" Width="1.5" PointX="11.25" PointY="10.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Integrated_productionModel.Position" Width="1.5" PointX="10.5" PointY="4.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Integrated_productionModel.Priority" Width="1.5" PointX="1.5" PointY="14.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Integrated_productionModel.Product" Width="1.5" PointX="6" PointY="9.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Integrated_productionModel.ProductionOrder" Width="1.5" PointX="0.75" PointY="2.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Integrated_productionModel.ProductionStage" Width="1.5" PointX="12.75" PointY="14.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Integrated_productionModel.PurchaseOrder" Width="1.5" PointX="3" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Integrated_productionModel.PurchaseOrderDetail" Width="1.5" PointX="5.25" PointY="6.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Integrated_productionModel.PurchaseReceipt" Width="1.5" PointX="8.25" PointY="4.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Integrated_productionModel.QualityDefect" Width="1.5" PointX="15" PointY="17.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Integrated_productionModel.Rate" Width="1.5" PointX="10.5" PointY="16.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Integrated_productionModel.Role" Width="1.5" PointX="15" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Integrated_productionModel.Schedule" Width="1.5" PointX="10.5" PointY="21.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Integrated_productionModel.StatusEmployee" Width="1.5" PointX="10.5" PointY="19" IsExpanded="true" />
+        <EntityTypeShape EntityType="Integrated_productionModel.StatusEquipment" Width="1.5" PointX="10.5" PointY="23.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Integrated_productionModel.StatusOrder" Width="1.5" PointX="1.5" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Integrated_productionModel.StatusProduct" Width="1.5" PointX="3.75" PointY="20" IsExpanded="true" />
+        <EntityTypeShape EntityType="Integrated_productionModel.StockBalance" Width="1.5" PointX="8.25" PointY="7.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Integrated_productionModel.Supplier" Width="1.5" PointX="0.75" PointY="19" IsExpanded="true" />
+        <EntityTypeShape EntityType="Integrated_productionModel.sysdiagrams" Width="1.5" PointX="5.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Integrated_productionModel.TechOperation" Width="1.5" PointX="10.5" PointY="13.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Integrated_productionModel.TechRoute" Width="1.5" PointX="8.25" PointY="13.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Integrated_productionModel.TypeEquipment" Width="1.5" PointX="10.5" PointY="26.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Integrated_productionModel.TypeMaterial" Width="1.5" PointX="0.75" PointY="7.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Integrated_productionModel.TypeWarehouse" Width="1.5" PointX="3.75" PointY="14.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Integrated_productionModel.Unit" Width="1.5" PointX="0.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Integrated_productionModel.User" Width="1.5" PointX="15" PointY="3.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Integrated_productionModel.UserRole" Width="1.5" PointX="17.25" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Integrated_productionModel.Warehouse" Width="1.5" PointX="6" PointY="14.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Integrated_productionModel.WorkLog" Width="1.5" PointX="15" PointY="11.5" IsExpanded="true" />
+        <AssociationConnector Association="Integrated_productionModel.FK_BillOfMaterials_Material" ManuallyRouted="false" />
+        <AssociationConnector Association="Integrated_productionModel.FK_BillOfMaterials_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="Integrated_productionModel.FK_Product_Category" ManuallyRouted="false" />
+        <AssociationConnector Association="Integrated_productionModel.FK_Employee_Department" ManuallyRouted="false" />
+        <AssociationConnector Association="Integrated_productionModel.FK_Employee_Position" ManuallyRouted="false" />
+        <AssociationConnector Association="Integrated_productionModel.FK_Employee_Rate" ManuallyRouted="false" />
+        <AssociationConnector Association="Integrated_productionModel.FK_Employee_StatusEmployee" ManuallyRouted="false" />
+        <AssociationConnector Association="Integrated_productionModel.FK_User_Employee" ManuallyRouted="false" />
+        <AssociationConnector Association="Integrated_productionModel.FK_WorkLog_Employee" ManuallyRouted="false" />
+        <AssociationConnector Association="Integrated_productionModel.FK_Equipment_Schedule" ManuallyRouted="false" />
+        <AssociationConnector Association="Integrated_productionModel.FK_Equipment_StatusEquipment" ManuallyRouted="false" />
+        <AssociationConnector Association="Integrated_productionModel.FK_Equipment_TypeEquipment" ManuallyRouted="false" />
+        <AssociationConnector Association="Integrated_productionModel.FK_EquipmentUsageLog_Equipment" ManuallyRouted="false" />
+        <AssociationConnector Association="Integrated_productionModel.FK_EquipmentUsageLog_ProductionStage" ManuallyRouted="false" />
+        <AssociationConnector Association="Integrated_productionModel.FK_Material_TypeMaterial" ManuallyRouted="false" />
+        <AssociationConnector Association="Integrated_productionModel.FK_Material_Unit" ManuallyRouted="false" />
+        <AssociationConnector Association="Integrated_productionModel.FK_PurchaseOrderDetail_Material" ManuallyRouted="false" />
+        <AssociationConnector Association="Integrated_productionModel.FK_StockBalance_Material" ManuallyRouted="false" />
+        <AssociationConnector Association="Integrated_productionModel.FK_OrderProduct_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="Integrated_productionModel.FK_OrderProduct_ProductionOrder" ManuallyRouted="false" />
+        <AssociationConnector Association="Integrated_productionModel.FK_ProductionOrder_Priority" ManuallyRouted="false" />
+        <AssociationConnector Association="Integrated_productionModel.FK_Product_StatusProduct" ManuallyRouted="false" />
+        <AssociationConnector Association="Integrated_productionModel.FK_Product_Unit" ManuallyRouted="false" />
+        <AssociationConnector Association="Integrated_productionModel.FK_TechRoute_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="Integrated_productionModel.FK_ProductionOrder_StatusOrder" ManuallyRouted="false" />
+        <AssociationConnector Association="Integrated_productionModel.FK_ProductionStage_ProductionOrder" ManuallyRouted="false" />
+        <AssociationConnector Association="Integrated_productionModel.FK_PurchaseOrder_ProductionOrder" ManuallyRouted="false" />
+        <AssociationConnector Association="Integrated_productionModel.FK_ProductionStage_TechOperation" ManuallyRouted="false" />
+        <AssociationConnector Association="Integrated_productionModel.FK_QualityDefect_ProductionStage" ManuallyRouted="false" />
+        <AssociationConnector Association="Integrated_productionModel.FK_WorkLog_ProductionStage" ManuallyRouted="false" />
+        <AssociationConnector Association="Integrated_productionModel.FK_PurchaseOrder_Supplier" ManuallyRouted="false" />
+        <AssociationConnector Association="Integrated_productionModel.FK_PurchaseOrderDetail_PurchaseOrder" ManuallyRouted="false" />
+        <AssociationConnector Association="Integrated_productionModel.FK_PurchaseReceipt_PurchaseOrder" ManuallyRouted="false" />
+        <AssociationConnector Association="Integrated_productionModel.FK_PurchaseReceipt_Warehouse" ManuallyRouted="false" />
+        <AssociationConnector Association="Integrated_productionModel.FK_UserRole_Role" ManuallyRouted="false" />
+        <AssociationConnector Association="Integrated_productionModel.FK_StockBalance_Warehouse" ManuallyRouted="false" />
+        <AssociationConnector Association="Integrated_productionModel.FK_TechOperation_TechRoute" ManuallyRouted="false" />
+        <AssociationConnector Association="Integrated_productionModel.FK_Warehouse_TypeWarehouse" ManuallyRouted="false" />
+        <AssociationConnector Association="Integrated_productionModel.FK_UserRole_User" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

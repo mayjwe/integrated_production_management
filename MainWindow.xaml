@@ -1,0 +1,34 @@
+﻿<Window x:Class="integrated_production_management.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:integrated_production_management"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="1200">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0" Background="#87CEEB">
+            <StackPanel x:Name="NavButtonsPanel" Orientation="Horizontal" VerticalAlignment="Center" Margin="10,0,0,0">
+                <Button x:Name="btnProducts" Content="Продукты" Width="100" Height="35" Margin="0,0,5,0" Click="btnProducts_Click"/>
+                <Button x:Name="btnMaterials" Content="Материалы" Width="100" Height="35" Margin="0,0,5,0" Click="btnMaterials_Click"/>
+                <Button x:Name="btnSuppliers" Content="Поставщики" Width="100" Height="35" Margin="0,0,5,0" Click="btnSuppliers_Click"/>
+                <Button x:Name="btnEmployees" Content="Сотрудники" Width="94" Height="35" Margin="0,0,5,0" Click="btnEmployees_Click"/>
+                <Button x:Name="btnEquipments" Content="Оборудование" Width="103" Height="35" Margin="0,0,5,0" Click="btnEquipments_Click"/>
+                <Button x:Name="btnPurchases" Content="Закупки" Width="82" Height="35" Margin="0,0,5,0" Click="btnPurchases_Click"/>
+                <Button x:Name="btnWarehouse" Content="Управление складами в материалах" Width="230" Height="35" Margin="0,0,5,0" Click="btnWarehouse_Click"/>
+                <Button x:Name="btnAssignResources" Content="Назначение" Width="89" Height="35" Margin="0,0,5,0" Click="btnAssignResources_Click"/>
+                <Button x:Name="btnCreateOrder" Content="Создание заказа" Width="112" Height="35" Click="btnCreateOrder_Click"/>
+                <Button x:Name="btnStatuses" Content="Статусы" Width="112" Height="35" Click="btnStatuses_Click"/>
+            </StackPanel>
+
+            <Button x:Name="btnBack" Content="Назад" HorizontalAlignment="Right" Cursor="Hand" Click="btnBack_Click" Margin="0,0,10,0" Width="80" Visibility="Hidden"/>
+        </Grid>
+
+        <Frame x:Name="FrmMain" Grid.Row="1" NavigationUIVisibility="Hidden" ContentRendered="FrmMain_ContentRendered"/>
+    </Grid>
+</Window>
